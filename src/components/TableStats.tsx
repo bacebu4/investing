@@ -5,6 +5,7 @@ const TableWrapper = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  padding-right: 32px;
 `;
 
 export const TableStats = () => {

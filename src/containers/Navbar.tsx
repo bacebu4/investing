@@ -7,6 +7,7 @@ const NavbarWrapper = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 32px;
 `;
 
 const FlexWrapper = styled.div`

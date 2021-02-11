@@ -15,7 +15,7 @@ const SidebarContent = styled.aside`
 const MainContent = styled.main`
   flex: 1;
   overflow: auto;
-  padding: 44px 32px 0;
+  padding: 44px 0 0 32px;
 `;
 
 function App() {
