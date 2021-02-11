@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MyBalance } from "./containers/MyBalance";
+import { Statistics } from "./containers/Statistics";
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const SidebarContent = styled.aside`
 const MainContent = styled.main`
   flex: 1;
   overflow: auto;
-  padding: 0 32px;
+  padding: 44px 32px 0;
 `;
 
 function App() {
@@ -23,11 +24,7 @@ function App() {
         <MyBalance />
       </SidebarContent>
       <MainContent>
-        <h2>cool here</h2>
-        <h2>cool here</h2>
-        <h2>cool here</h2>
-        <h2>cool here</h2>
-        <h2>cool here</h2>
+        <Statistics />
       </MainContent>
     </Wrapper>
   );
