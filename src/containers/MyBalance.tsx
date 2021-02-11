@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
-import { PURPLE } from "../colors";
+import { GRAY, PURPLE } from "../colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
+import { Chevron } from "../components/Chevron";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -47,6 +48,12 @@ const FlexRow = styled.div`
   margin-top: 32px;
 `;
 
+const GrayText = styled.span`
+  color: ${GRAY};
+  font-weight: 500;
+  font-size: 1.125rem;
+`;
+
 export const MyBalance: React.FC = () => {
   return (
     <>
@@ -59,7 +66,12 @@ export const MyBalance: React.FC = () => {
       <section>
         <FlexRow>
           <Title isSmall>Ticket's Prices</Title>
-          This month
+          <div
+            style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+          >
+            <GrayText>This month</GrayText>
+            <Chevron ml="4px" />
+          </div>
         </FlexRow>
 
         <TablePrices />
