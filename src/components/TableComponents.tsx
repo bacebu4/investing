@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GRAY, LIGHT_GRAY } from "../colors";
+import { GRAY, LIGHT_GRAY, RED, GREEN, DARK } from "../colors";
 
 export const Table = styled.table<{ mt?: string }>`
   text-align: left;
@@ -21,8 +21,18 @@ export const Tr = styled.tr`
   }
 `;
 
-export const Td = styled.td`
+export const Td = styled.td<{
+  textAlign?: string;
+  color?: "red" | "green";
+  isMedium?: boolean;
+}>`
   padding: 12px;
+  text-align: ${(props) => props.textAlign};
+
+  color: ${(props) =>
+    props.color === "red" ? RED : props.color === "green" ? GREEN : DARK};
+
+  font-weight: ${(props) => (props.isMedium ? "500" : "400")};
 
   &:first-child {
     border-radius: 10px 0 0 10px;

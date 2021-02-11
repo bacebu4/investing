@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Title } from "../components/Title";
 import { PURPLE } from "../colors";
 import { PieChart } from "../components/PieChart";
-import { Table, Td, Tr } from "../components/TableComponents";
+import { TablePrices } from "../components/TablePrices";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -62,26 +62,7 @@ export const MyBalance: React.FC = () => {
           This month
         </FlexRow>
 
-        <Table mt="24px">
-          <tbody>
-            <Tr>
-              <Td>CHMF</Td>
-              <Td>13.43</Td>
-            </Tr>
-            <Tr>
-              <Td>FXUS</Td>
-              <Td>13.43</Td>
-            </Tr>
-            <Tr>
-              <Td>FXTB</Td>
-              <Td>13.43</Td>
-            </Tr>
-            <Tr>
-              <Td>FXWO</Td>
-              <Td>13.43</Td>
-            </Tr>
-          </tbody>
-        </Table>
+        <TablePrices />
       </section>
     </>
   );
