@@ -3,6 +3,8 @@ import { GRAY, LIGHT_GRAY } from "../colors";
 
 export const Table = styled.table<{ mt?: string }>`
   text-align: left;
+  min-width: 100%;
+
   margin-top: ${(props) => props.mt};
 `;
 
