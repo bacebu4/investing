@@ -19,26 +19,15 @@ export const Navbar: React.FC = () => {
     <nav>
       <NavbarWrapper>
         <FlexWrapper>
-          <li>
-            <NavbarLink isActive>Statistics</NavbarLink>
-          </li>
-          <li>
-            <NavbarLink ml="32px">What To Buy</NavbarLink>
-          </li>
-          <li>
-            <NavbarLink ml="32px">FAQ</NavbarLink>
-          </li>
+          <NavbarLink isActive>Statistics</NavbarLink>
+          <NavbarLink ml="32px">What To Buy</NavbarLink>
+          <NavbarLink ml="32px">FAQ</NavbarLink>
         </FlexWrapper>
+
         <FlexWrapper>
-          <li>
-            <img width={44} src={userPic} alt="User profile" />
-          </li>
-          <li>
-            <Chevron />
-          </li>
-          <li>
-            <NavbarLink ml="32px">Sign Out</NavbarLink>
-          </li>
+          <img width={44} src={userPic} alt="User profile" />
+          <Chevron />
+          <NavbarLink ml="32px">Sign Out</NavbarLink>
         </FlexWrapper>
       </NavbarWrapper>
     </nav>

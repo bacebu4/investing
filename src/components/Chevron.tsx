@@ -1,9 +1,5 @@
 import React from "react";
 
-// interface ChevronProps {
-
-// }
-
 export const Chevron: React.FC = () => {
   return (
     <svg

@@ -1,7 +1,8 @@
+import React from "react";
 import styled from "styled-components";
 import { DARK, GRAY } from "../colors";
 
-export const NavbarLink = styled.a<{ isActive?: boolean; ml?: string }>`
+export const NavbarLinkInner = styled.a<{ isActive?: boolean; ml?: string }>`
   font-size: 1.125rem;
   font-weight: 600;
   color: ${(props) => (props.isActive ? undefined : GRAY)};
@@ -11,3 +12,17 @@ export const NavbarLink = styled.a<{ isActive?: boolean; ml?: string }>`
     color: ${DARK};
   }
 `;
+
+export const NavbarLink: React.FC<{
+  children: React.ReactNode;
+  ml?: string;
+  isActive?: boolean;
+}> = ({ children, ml, isActive }) => {
+  return (
+    <li>
+      <NavbarLinkInner ml={ml} isActive={isActive}>
+        {children}
+      </NavbarLinkInner>
+    </li>
+  );
+};
