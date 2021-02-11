@@ -42,13 +42,6 @@ const data = [
   },
 ];
 
-const FlexRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 32px;
-`;
-
 const GrayText = styled.span`
   color: ${GRAY};
   font-weight: 500;
