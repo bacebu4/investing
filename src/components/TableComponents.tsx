@@ -25,6 +25,7 @@ export const Td = styled.td<{
   textAlign?: string;
   color?: "red" | "green";
   isMedium?: boolean;
+  isBold?: boolean;
 }>`
   padding: 12px;
   text-align: ${(props) => props.textAlign};
@@ -32,7 +33,8 @@ export const Td = styled.td<{
   color: ${(props) =>
     props.color === "red" ? RED : props.color === "green" ? GREEN : DARK};
 
-  font-weight: ${(props) => (props.isMedium ? "500" : "400")};
+  font-weight: ${(props) =>
+    props.isMedium ? "500" : props.isBold ? "700" : "400"};
 
   &:first-child {
     border-radius: 10px 0 0 10px;

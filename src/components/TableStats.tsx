@@ -30,7 +30,7 @@ export const TableStats = () => {
             <Td>12</Td>
             <Td>Lettuce </Td>
             <Td>Trek</Td>
-            <Td>Digby </Td>
+            <Td isBold>Digby </Td>
             <Td>5%</Td>
           </Tr>
           <Tr>
@@ -39,7 +39,7 @@ export const TableStats = () => {
             <Td>435</Td>
             <Td>Blue</Td>
             <Td>Wars</Td>
-            <Td>John </Td>
+            <Td isBold>John </Td>
             <Td>4%</Td>
           </Tr>
           <Tr>
@@ -48,7 +48,7 @@ export const TableStats = () => {
             <Td>324</Td>
             <Td>Smurflow</Td>
             <Td>Smurf</Td>
-            <Td>Smurflane </Td>
+            <Td isBold>Smurflane </Td>
             <Td>4%</Td>
           </Tr>
           <Tr>
@@ -57,7 +57,7 @@ export const TableStats = () => {
             <Td>4</Td>
             <Td>Red</Td>
             <Td>Wars</Td>
-            <Td>Lori </Td>
+            <Td isBold>Lori </Td>
             <Td>43%</Td>
           </Tr>
           <Tr>
@@ -66,7 +66,7 @@ export const TableStats = () => {
             <Td>42</Td>
             <Td>Blue</Td>
             <Td>Wars</Td>
-            <Td>42nd</Td>
+            <Td isBold>42nd</Td>
             <Td>45%</Td>
           </Tr>
         </tbody>
