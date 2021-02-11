@@ -7,11 +7,13 @@ const Wrapper = styled.div`
 
 const SidebarContent = styled.aside`
   width: 33%;
+  padding: 0 64px;
 `;
 
 const MainContent = styled.main`
   flex: 1;
   overflow: auto;
+  padding: 0 32px;
 `;
 
 function App() {
