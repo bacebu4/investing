@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Table, Th, Tr, Td } from "./TableComponents";
 
-const TableWrapper = styled.div`
+const TableScrollableYWrapper = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -10,7 +10,7 @@ const TableWrapper = styled.div`
 
 export const TableStats = () => {
   return (
-    <TableWrapper>
+    <TableScrollableYWrapper>
       <Table mt="44px">
         <thead>
           <tr>
@@ -71,6 +71,6 @@ export const TableStats = () => {
           </Tr>
         </tbody>
       </Table>
-    </TableWrapper>
+    </TableScrollableYWrapper>
   );
 };
