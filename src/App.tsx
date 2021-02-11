@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MyBalance } from "./containers/MyBalance";
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ function App() {
   return (
     <Wrapper>
       <SidebarContent>
-        <h1>hey</h1>
+        <MyBalance />
       </SidebarContent>
       <MainContent>
         <h2>cool here</h2>
