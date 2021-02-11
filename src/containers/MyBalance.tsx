@@ -5,6 +5,7 @@ import { GRAY, PURPLE } from "../colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
 import { Chevron } from "../components/Chevron";
+import { FlexBox } from "../components/FlexBox";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -64,15 +65,14 @@ export const MyBalance: React.FC = () => {
       </section>
 
       <section>
-        <FlexRow>
+        <FlexBox jc="space-between" ai="center" mt="32px">
           <Title isSmall>Ticket's Prices</Title>
-          <div
-            style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
-          >
+
+          <FlexBox ai="center">
             <GrayText>This month</GrayText>
             <Chevron ml="4px" />
-          </div>
-        </FlexRow>
+          </FlexBox>
+        </FlexBox>
 
         <TablePrices />
       </section>

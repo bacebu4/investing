@@ -1,19 +1,13 @@
 import React from "react";
+import { FlexBox } from "./FlexBox";
 
 interface ChevronProps {
-  ml?: string | number | (string & {}) | undefined;
+  ml?: string;
 }
 
 export const Chevron: React.FC<ChevronProps> = ({ ml }) => {
   return (
-    <div
-      style={{
-        marginLeft: ml,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <FlexBox ml={ml} jc="center" ai="center">
       <svg
         width="32"
         height="32"
@@ -28,6 +22,6 @@ export const Chevron: React.FC<ChevronProps> = ({ ml }) => {
           strokeLinejoin="round"
         />
       </svg>
-    </div>
+    </FlexBox>
   );
 };
