@@ -2,7 +2,7 @@
 
 ## Purpose of the project
 
-The key feature of the application is to provide to the end user information of what stocks he should buy in order to keep ir get close to the desired ratio
+The key feature of the application is to provide to the end user information of what stocks he should buy in order to keep or get close to the desired ratio
 
 ## Available Scripts
 
