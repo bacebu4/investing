@@ -12,7 +12,7 @@ export const Th = styled.th`
   padding: 12px;
   font-size: 1.125rem;
   color: ${GRAY};
-  font-weight: 700;
+  font-weight: 600;
 `;
 
 export const Tr = styled.tr`
