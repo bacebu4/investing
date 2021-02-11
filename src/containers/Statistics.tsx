@@ -1,4 +1,5 @@
 import { ExplanationText } from "../components/ExplanationText";
+import { TableStats } from "../components/TableStats";
 import { Title } from "../components/Title";
 
 export const Statistics: React.FC = () => {
@@ -10,6 +11,7 @@ export const Statistics: React.FC = () => {
           See the staticstic about how close you are to the needed percentage of
           individul stock
         </ExplanationText>
+        <TableStats />
       </section>
     </>
   );
