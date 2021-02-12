@@ -9,13 +9,16 @@ const Wrapper = styled.div`
 
 const SidebarContent = styled.aside`
   width: 33%;
+  overflow: auto;
   padding: 0 64px;
+  height: 100vh;
 `;
 
 const MainContent = styled.main`
   flex: 1;
   overflow: auto;
   padding: 44px 0 0 0;
+  height: 95vh;
 `;
 
 function App() {
