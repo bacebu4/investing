@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
           </NavbarLink>
 
           <NavbarLink ml="32px" to="/">
-            What To Buy
+            Recommendations
           </NavbarLink>
 
           <NavbarLink
