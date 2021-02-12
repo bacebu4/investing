@@ -16,10 +16,20 @@ export const Statistics: React.FC = () => {
 
         <TableStats />
       </section>
+
       <section>
         <Title mt="64px">Relative Goal Chart</Title>
         <ExplanationText mt="16px">
           Here is written how this parameter is calculated
+        </ExplanationText>
+
+        <HorizontalBar data={mockData} />
+      </section>
+
+      <section>
+        <Title mt="64px">Pay Attention To</Title>
+        <ExplanationText mt="16px">
+          These stocks are way out of desired ratio. Keep an eye on them!
         </ExplanationText>
 
         <HorizontalBar data={mockData} />
