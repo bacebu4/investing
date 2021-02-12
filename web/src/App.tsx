@@ -4,6 +4,8 @@ import { Statistics } from "./containers/Statistics";
 import { Navbar } from "./containers/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { FlexBox } from "./components/FlexBox";
+import React from "react";
+import { Title } from "./components/Title";
 
 const SidebarContent = styled.aside`
   width: 33%;
@@ -37,7 +39,9 @@ function App() {
           <Navbar />
 
           <Switch>
-            <Route path="/faq">{/* <Faq /> */}</Route>
+            <Route path="/faq">
+              <Title mt="64px">FAQ</Title>
+            </Route>
 
             <Route path="/">
               <Statistics />
