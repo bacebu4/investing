@@ -1,4 +1,5 @@
 import { ExplanationText } from "../components/ExplanationText";
+import { HorizontalBar } from "../components/HorizontalBar";
 import { TableStats } from "../components/TableStats";
 import { Title } from "../components/Title";
 
@@ -13,6 +14,14 @@ export const Statistics: React.FC = () => {
         </ExplanationText>
 
         <TableStats />
+      </section>
+      <section>
+        <Title mt="64px">Relative Goal Chart</Title>
+        <ExplanationText mt="16px">
+          Here is written how this parameter is calculated
+        </ExplanationText>
+
+        <HorizontalBar />
       </section>
     </>
   );
