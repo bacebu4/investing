@@ -13,6 +13,12 @@ const SidebarContent = styled.aside`
   overflow: auto;
   padding: 0 64px;
   height: 100vh;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const MainContent = styled.main`
