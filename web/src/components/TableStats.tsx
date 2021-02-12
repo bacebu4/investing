@@ -29,45 +29,55 @@ export const TableStats = () => {
             <Td>MaTman</Td>
             <Td>12</Td>
             <Td>Lettuce </Td>
-            <Td>Trek</Td>
-            <Td isBold>Digby </Td>
-            <Td>5%</Td>
+            <Td>42.98%</Td>
+            <Td isBold>13%</Td>
+            <Td isBold color={Math.abs(5) >= 10 ? "red" : "gray"}>
+              +5%
+            </Td>
           </Tr>
           <Tr>
             <Td>The</Td>
             <Td>Tick</Td>
             <Td>435</Td>
             <Td>Blue</Td>
-            <Td>Wars</Td>
-            <Td isBold>John </Td>
-            <Td>4%</Td>
+            <Td>42.40%</Td>
+            <Td isBold>10%</Td>
+            <Td isBold color={Math.abs(4) >= 10 ? "red" : "gray"}>
+              +4%
+            </Td>
           </Tr>
           <Tr>
             <Td>Jokey</Td>
             <Td>Smurf</Td>
             <Td>324</Td>
             <Td>Smurflow</Td>
-            <Td>Smurf</Td>
-            <Td isBold>Smurflane </Td>
-            <Td>4%</Td>
+            <Td>12.44%</Td>
+            <Td isBold>15%</Td>
+            <Td isBold color={Math.abs(-12) >= 10 ? "red" : "gray"}>
+              -12%
+            </Td>
           </Tr>
           <Tr>
             <Td>Cindy</Td>
             <Td>Beyler</Td>
             <Td>4</Td>
             <Td>Red</Td>
-            <Td>Wars</Td>
-            <Td isBold>Lori </Td>
-            <Td>43%</Td>
+            <Td>34.42%</Td>
+            <Td isBold>20%</Td>
+            <Td isBold color={Math.abs(43) >= 10 ? "red" : "gray"}>
+              +43%
+            </Td>
           </Tr>
           <Tr>
             <Td>Captain</Td>
             <Td>Cool</Td>
             <Td>42</Td>
             <Td>Blue</Td>
-            <Td>Wars</Td>
-            <Td isBold>42nd</Td>
-            <Td>45%</Td>
+            <Td>34.33%</Td>
+            <Td isBold>25%</Td>
+            <Td isBold color={Math.abs(5) >= 10 ? "red" : "gray"}>
+              -5%
+            </Td>
           </Tr>
         </tbody>
       </Table>
