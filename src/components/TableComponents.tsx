@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { GRAY, LIGHT_GRAY, Color, colorSwitcher } from "../colors";
 
-export const Table = styled.table<{ mt?: string }>`
+export const Table = styled.table<{ mt?: string; mb?: string }>`
   text-align: left;
   min-width: 100%;
 
   margin-top: ${(props) => props.mt};
+  margin-bottom: ${(props) => props.mb};
 `;
 
 export const Th = styled.th`
