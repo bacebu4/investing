@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GRAY, LIGHT_GRAY, Color, colorSwitcher } from "../colors";
+import { GRAY, LIGHT_GRAY, Color, colorSwitcher } from "../utils/colors";
 
 export const Table = styled.table<{ mt?: string; mb?: string }>`
   text-align: left;

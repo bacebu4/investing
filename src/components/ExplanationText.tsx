@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GRAY } from "../colors";
+import { GRAY } from "../utils/colors";
 
 export const ExplanationText = styled.p<{ mt?: string }>`
   font-size: 1rem;

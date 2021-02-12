@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
-import { GRAY, PURPLE } from "../colors";
+import { GRAY, PURPLE } from "../utils/colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
 import { Chevron } from "../components/Chevron";

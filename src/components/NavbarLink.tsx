@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { DARK, GRAY } from "../colors";
+import { DARK, GRAY } from "../utils/colors";
 
 export const NavbarLinkInner = styled.span<{ isActive?: boolean; ml?: string }>`
   font-size: 1.125rem;

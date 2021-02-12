@@ -1,6 +1,6 @@
 import { ResponsiveBar } from "@nivo/bar";
 import styled from "styled-components";
-import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../colors";
+import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../utils/colors";
 import { getOrdinalColorScale } from "@nivo/colors";
 
 const HorizontalBarWrapper = styled.div`

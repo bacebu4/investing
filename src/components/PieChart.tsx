@@ -1,6 +1,6 @@
 import { ResponsivePie } from "@nivo/pie";
 import styled from "styled-components";
-import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../colors";
+import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../utils/colors";
 
 const PieChartWrapper = styled.div`
   height: 360px;
