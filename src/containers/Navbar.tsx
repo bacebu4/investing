@@ -3,6 +3,7 @@ import { NavbarLink } from "../components/NavbarLink";
 import userPic from "../assets/user_pic.png";
 import { Chevron } from "../components/Chevron";
 import { FlexBox } from "../components/FlexBox";
+import { useLocation } from "react-router-dom";
 
 const NavbarWrapper = styled.ul`
   display: flex;
@@ -12,17 +13,23 @@ const NavbarWrapper = styled.ul`
 `;
 
 export const Navbar: React.FC = () => {
+  const location = useLocation();
+
   return (
     <nav>
       <NavbarWrapper>
         <FlexBox ai="center">
-          <NavbarLink isActive to="/">
+          <NavbarLink isActive={location.pathname === "/"} to="/">
             Statistics
           </NavbarLink>
           <NavbarLink ml="32px" to="/">
             What To Buy
           </NavbarLink>
-          <NavbarLink ml="32px" to="/faq">
+          <NavbarLink
+            isActive={location.pathname === "/faq"}
+            ml="32px"
+            to="/faq"
+          >
             FAQ
           </NavbarLink>
         </FlexBox>
