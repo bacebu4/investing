@@ -29,6 +29,11 @@ export const HorizontalBar: React.FC<HorizontalBarProps> = ({ data }) => (
       borderRadius={5}
       axisTop={null}
       axisRight={null}
+      axisLeft={{
+        tickSize: 0,
+        tickPadding: 12,
+        tickRotation: 0,
+      }}
       enableGridX={true}
       enableGridY={false}
       enableLabel={false}
