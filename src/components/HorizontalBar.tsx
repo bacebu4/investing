@@ -1,6 +1,7 @@
 import { ResponsiveBar } from "@nivo/bar";
 import styled from "styled-components";
 import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../colors";
+import { getOrdinalColorScale } from "@nivo/colors";
 
 const HorizontalBarWrapper = styled.div`
   height: 360px;
@@ -16,14 +17,15 @@ export const HorizontalBar: React.FC<HorizontalBarProps> = ({ data }) => (
       data={data}
       keys={["value"]}
       indexBy="id"
-      // @ts-ignore
-      colorBy="index"
       margin={{ top: 50, right: 50, bottom: 50, left: 50 }}
       padding={0.35}
       layout="horizontal"
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
-      colors={[YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE]}
+      colors={getOrdinalColorScale(
+        [YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE],
+        "index"
+      )}
       borderRadius={5}
       axisTop={null}
       axisRight={null}
