@@ -22,9 +22,11 @@ export const Navbar: React.FC = () => {
           <NavbarLink isActive={location.pathname === "/"} to="/">
             Statistics
           </NavbarLink>
+
           <NavbarLink ml="32px" to="/">
             What To Buy
           </NavbarLink>
+
           <NavbarLink
             isActive={location.pathname === "/faq"}
             ml="32px"
@@ -37,6 +39,7 @@ export const Navbar: React.FC = () => {
         <FlexBox ai="center">
           <img width={44} src={userPic} alt="User profile" />
           <Chevron />
+
           <NavbarLink ml="32px" to="/">
             Sign Out
           </NavbarLink>
