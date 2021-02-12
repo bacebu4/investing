@@ -19,7 +19,8 @@ export type Color =
   | "gray"
   | "light gray"
   | "red"
-  | "dark";
+  | "dark"
+  | undefined;
 
 export function colorSwitcher(color: Color) {
   switch (color) {
@@ -54,6 +55,6 @@ export function colorSwitcher(color: Color) {
       return DARK;
 
     default:
-      break;
+      return DARK;
   }
 }

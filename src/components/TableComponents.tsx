@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GRAY, LIGHT_GRAY, RED, GREEN, DARK } from "../colors";
+import { GRAY, LIGHT_GRAY, Color, colorSwitcher } from "../colors";
 
 export const Table = styled.table<{ mt?: string }>`
   text-align: left;
@@ -23,15 +23,14 @@ export const Tr = styled.tr`
 
 export const Td = styled.td<{
   textAlign?: string;
-  color?: "red" | "green";
+  color?: Color;
   isMedium?: boolean;
   isBold?: boolean;
 }>`
   padding: 12px;
   text-align: ${(props) => props.textAlign};
 
-  color: ${(props) =>
-    props.color === "red" ? RED : props.color === "green" ? GREEN : DARK};
+  color: ${(props) => colorSwitcher(props.color)};
 
   font-weight: ${(props) =>
     props.isMedium ? "500" : props.isBold ? "700" : "400"};
