@@ -6,6 +6,12 @@ const TableScrollableYWrapper = styled.div`
   overflow-y: hidden;
   white-space: nowrap;
   padding-right: 32px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const TableStats = () => {
