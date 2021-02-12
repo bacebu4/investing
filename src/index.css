@@ -132,3 +132,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  color: #a4a2c1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #383838;
+}

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { MyBalance } from "./containers/MyBalance";
 import { Statistics } from "./containers/Statistics";
 import { Navbar } from "./containers/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Wrapper = styled.div`
   display: flex;
@@ -23,17 +24,25 @@ const MainContent = styled.main`
 
 function App() {
   return (
-    <Wrapper>
-      <SidebarContent>
-        <MyBalance />
-      </SidebarContent>
+    <Router>
+      <Wrapper>
+        <SidebarContent>
+          <MyBalance />
+        </SidebarContent>
 
-      <MainContent>
-        <Navbar />
+        <MainContent>
+          <Navbar />
 
-        <Statistics />
-      </MainContent>
-    </Wrapper>
+          <Switch>
+            <Route path="/faq">{/* <Faq /> */}</Route>
+
+            <Route path="/">
+              <Statistics />
+            </Route>
+          </Switch>
+        </MainContent>
+      </Wrapper>
+    </Router>
   );
 }
 
