@@ -2,6 +2,7 @@ import { ExplanationText } from "../components/ExplanationText";
 import { HorizontalBar } from "../components/HorizontalBar";
 import { TableStats } from "../components/TableStats";
 import { Title } from "../components/Title";
+import { mockData } from "../mockData";
 
 export const Statistics: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ export const Statistics: React.FC = () => {
           Here is written how this parameter is calculated
         </ExplanationText>
 
-        <HorizontalBar />
+        <HorizontalBar data={mockData} />
       </section>
     </>
   );
