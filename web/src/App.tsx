@@ -3,10 +3,7 @@ import { MyBalance } from "./containers/MyBalance";
 import { Statistics } from "./containers/Statistics";
 import { Navbar } from "./containers/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-const Wrapper = styled.div`
-  display: flex;
-`;
+import { FlexBox } from "./components/FlexBox";
 
 const SidebarContent = styled.aside`
   width: 33%;
@@ -31,7 +28,7 @@ const MainContent = styled.main`
 function App() {
   return (
     <Router>
-      <Wrapper>
+      <FlexBox>
         <SidebarContent>
           <MyBalance />
         </SidebarContent>
@@ -47,7 +44,7 @@ function App() {
             </Route>
           </Switch>
         </MainContent>
-      </Wrapper>
+      </FlexBox>
     </Router>
   );
 }
