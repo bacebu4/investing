@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavbarLink } from "../components/NavbarLink";
 import userPic from "../assets/user_pic.png";
 import { Chevron } from "../components/Chevron";
+import { FlexBox } from "../components/FlexBox";
 
 const NavbarWrapper = styled.ul`
   display: flex;
@@ -10,26 +11,21 @@ const NavbarWrapper = styled.ul`
   padding-right: 32px;
 `;
 
-const FlexWrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
 export const Navbar: React.FC = () => {
   return (
     <nav>
       <NavbarWrapper>
-        <FlexWrapper>
+        <FlexBox ai="center">
           <NavbarLink isActive>Statistics</NavbarLink>
           <NavbarLink ml="32px">What To Buy</NavbarLink>
           <NavbarLink ml="32px">FAQ</NavbarLink>
-        </FlexWrapper>
+        </FlexBox>
 
-        <FlexWrapper>
+        <FlexBox ai="center">
           <img width={44} src={userPic} alt="User profile" />
           <Chevron />
           <NavbarLink ml="32px">Sign Out</NavbarLink>
-        </FlexWrapper>
+        </FlexBox>
       </NavbarWrapper>
     </nav>
   );
