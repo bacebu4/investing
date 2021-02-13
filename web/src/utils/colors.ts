@@ -58,3 +58,13 @@ export function colorSwitcher(color: Color) {
       return DARK;
   }
 }
+
+export function hexToRgb(hex: string) {
+  const hexWithoutFirstSymbol = hex.slice(1, hex.length);
+  const bigint = parseInt(hexWithoutFirstSymbol, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+
+  return `${r}, ${g}, ${b}`;
+}
