@@ -1,3 +1,4 @@
+import { BaseInput } from "../components/BaseInput";
 import { ExplanationText } from "../components/ExplanationText";
 import { Title } from "../components/Title";
 
@@ -11,6 +12,7 @@ export const Recommendations: React.FC = () => {
           you’ll get the concrete amount of each stock you should buy in order
           to get close to the desired ratio
         </ExplanationText>
+        <BaseInput placeholder="Enter the amount money here" mt="44px" />
       </section>
 
       <section>
