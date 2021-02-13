@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { FlexBox } from "../components/FlexBox";
 import { GRAY } from "../utils/colors";
 
 const FooterWrapper = styled.footer`
