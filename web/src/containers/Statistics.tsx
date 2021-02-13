@@ -31,8 +31,6 @@ export const Statistics: React.FC = () => {
         <ExplanationText mt="16px">
           These stocks are way out of desired ratio. Keep an eye on them!
         </ExplanationText>
-
-        <HorizontalBar data={mockData} />
       </section>
     </>
   );

@@ -23,7 +23,11 @@ export const Navbar: React.FC = () => {
             Statistics
           </NavbarLink>
 
-          <NavbarLink ml="32px" to="/">
+          <NavbarLink
+            isActive={location.pathname === "/recommendations"}
+            ml="32px"
+            to="/recommendations"
+          >
             Recommendations
           </NavbarLink>
 
