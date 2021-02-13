@@ -7,6 +7,7 @@ import { FlexBox } from "./components/FlexBox";
 import React from "react";
 import { Recommendations } from "./containers/Recommendations";
 import { FAQ } from "./containers/FAQ";
+import { Footer } from "./containers/Footer";
 
 const SidebarContent = styled.aside`
   width: 33%;
@@ -52,6 +53,8 @@ function App() {
               <Statistics />
             </Route>
           </Switch>
+
+          <Footer />
         </MainContent>
       </FlexBox>
     </Router>
