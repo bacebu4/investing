@@ -7,6 +7,7 @@ export const GRAY = "#A4A2C1";
 export const LIGHT_GRAY = "#F7F6FF";
 export const GREEN = "#56C13B";
 export const RED = "#D68927";
+export const VIVID_RED = "#D63227";
 export const DARK = "#383838";
 
 const colors = {
@@ -20,6 +21,10 @@ const colors = {
   green: GREEN,
   red: RED,
   dark: DARK,
+  success: GREEN,
+  warning: RED,
+  danger: VIVID_RED,
+  "vivid red": VIVID_RED,
 };
 
 export type Color =
@@ -32,7 +37,10 @@ export type Color =
   | "gray"
   | "light gray"
   | "red"
-  | "dark";
+  | "dark"
+  | "success"
+  | "warning"
+  | "danger";
 
 export function colorSwitcher(color: Color) {
   return colors[color];

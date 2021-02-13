@@ -1,19 +1,44 @@
 import styled from "styled-components";
-import { RED } from "../utils/colors";
+import { colorSwitcher } from "../utils/colors";
 import warning from "../assets/warning.svg";
+import danger from "../assets/danger.svg";
+import success from "../assets/success.svg";
 import { FlexBox } from "./FlexBox";
+
+type VariantProps = "success" | "warning" | "danger";
+
+function imageSwitcher(variant: VariantProps) {
+  switch (variant) {
+    case "danger":
+      return danger;
+
+    case "success":
+      return success;
+
+    case "warning":
+      return warning;
+  }
+}
 
 type InfoCardProps = {
   name: string;
   message: string;
+  variant: VariantProps;
+  mt: string;
 };
 
-const InfoCardWrapper = styled.span`
+type InfoCardWrapperProps = {
+  variant: VariantProps;
+  mt: string;
+};
+
+const InfoCardWrapper = styled.span<InfoCardWrapperProps>`
   display: inline-block;
   padding: 12px 16px;
-  background-color: ${RED + "1A"};
+  background-color: ${(props) => colorSwitcher(props.variant) + "1a"};
   border-radius: 16px;
-  color: ${RED};
+  color: ${(props) => colorSwitcher(props.variant)};
+  margin-top: ${(props) => props.mt};
 `;
 
 const NameWrapper = styled.span`
@@ -22,11 +47,16 @@ const NameWrapper = styled.span`
   margin-right: 4px;
 `;
 
-export const InfoCard: React.FC<InfoCardProps> = ({ name, message }) => {
+export const InfoCard: React.FC<InfoCardProps> = ({
+  name,
+  message,
+  variant,
+  mt,
+}) => {
   return (
-    <InfoCardWrapper>
+    <InfoCardWrapper variant={variant} mt={mt}>
       <FlexBox ai="center">
-        <img src={warning} alt="warning" />
+        <img src={imageSwitcher(variant)} alt="warning" />
         <NameWrapper>{name}</NameWrapper> {" – " + message}
       </FlexBox>
     </InfoCardWrapper>

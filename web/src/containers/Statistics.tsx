@@ -13,7 +13,7 @@ export const Statistics: React.FC = () => {
         <Title mt="64px">Portfolio Goals & Statistics</Title>
 
         <ExplanationText mt="16px">
-          See the staticstic about how close you are to the needed percentage of
+          See the statistic about how close you are to the needed percentage of
           individul stock
         </ExplanationText>
 
@@ -40,7 +40,9 @@ export const Statistics: React.FC = () => {
         <InfoCard
           name="CHMF"
           message="You have 16% less of them than needed"
-        ></InfoCard>
+          variant="success"
+          mt="32px"
+        />
       </section>
     </>
   );
