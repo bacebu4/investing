@@ -1,26 +1,24 @@
 export const AddButton = () => {
   return (
     <svg
-      width="72"
-      height="72"
-      viewBox="0 0 72 72"
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g filter="url(#filter0_d)">
-        <rect x="23" y="11" width="36" height="36" rx="12" fill="#F7F6FF" />
-      </g>
+      <rect width="36" height="36" rx="12" fill="#F7F6FF" />
       <g clipPath="url(#clip0)">
-        <g filter="url(#filter1_d)">
+        <g filter="url(#filter0_d)">
           <path
-            d="M32.6632 28.8918H47.9013"
+            d="M9.66324 17.8918H24.9013"
             stroke="#6A63DD"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
-            d="M40.2823 36.5109V21.2712"
+            d="M17.2823 25.5109V10.2712"
             stroke="#6A63DD"
             strokeWidth="2"
             strokeLinecap="round"
@@ -31,47 +29,8 @@ export const AddButton = () => {
       <defs>
         <filter
           id="filter0_d"
-          x="0"
-          y="0"
-          width="72"
-          height="72"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          />
-          <feMorphology
-            radius="3"
-            operator="dilate"
-            in="SourceAlpha"
-            result="effect1_dropShadow"
-          />
-          <feOffset dx="-5" dy="7" />
-          <feGaussianBlur stdDeviation="7.5" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.508333 0 0 0 0 0.508333 0 0 0 0 0.508333 0 0 0 0.15 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
-        </filter>
-        <filter
-          id="filter1_d"
-          x="24.6632"
-          y="18.2712"
+          x="1.66324"
+          y="7.27124"
           width="25.2381"
           height="25.2396"
           filterUnits="userSpaceOnUse"
@@ -106,7 +65,7 @@ export const AddButton = () => {
             width="32"
             height="32"
             fill="white"
-            transform="translate(25 13)"
+            transform="translate(2 2)"
           />
         </clipPath>
       </defs>
