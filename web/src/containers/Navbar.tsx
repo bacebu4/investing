@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { NavbarLink } from "../components/NavbarLink";
-import userPic from "../assets/user_pic.png";
-import { Chevron } from "../components/Chevron";
 import { FlexBox } from "../components/FlexBox";
 import { useLocation } from "react-router-dom";
+import { SettingsButton } from "../components/SettingsButton";
 
 const NavbarWrapper = styled.ul`
   display: flex;
@@ -41,8 +40,7 @@ export const Navbar: React.FC = () => {
         </FlexBox>
 
         <FlexBox ai="center">
-          <img width={44} src={userPic} alt="User profile" />
-          <Chevron />
+          <SettingsButton />
 
           <NavbarLink ml="32px" to="/">
             Sign Out
