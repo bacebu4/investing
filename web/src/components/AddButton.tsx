@@ -10,21 +10,21 @@ export const AddButton = () => {
       <g filter="url(#filter0_d)">
         <rect x="23" y="11" width="36" height="36" rx="12" fill="#F7F6FF" />
       </g>
-      <g clip-path="url(#clip0)">
+      <g clipPath="url(#clip0)">
         <g filter="url(#filter1_d)">
           <path
             d="M32.6632 28.8918H47.9013"
             stroke="#6A63DD"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M40.2823 36.5109V21.2712"
             stroke="#6A63DD"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
       </g>
@@ -36,9 +36,9 @@ export const AddButton = () => {
           width="72"
           height="72"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -75,9 +75,9 @@ export const AddButton = () => {
           width="25.2381"
           height="25.2396"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
