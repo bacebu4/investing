@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { hexToRgb, RED } from "../utils/colors";
+import { RED } from "../utils/colors";
 import warning from "../assets/warning.svg";
 import { FlexBox } from "./FlexBox";
 
@@ -11,7 +11,7 @@ type InfoCardProps = {
 const InfoCardWrapper = styled.span`
   display: inline-block;
   padding: 12px 16px;
-  background-color: rgba(${hexToRgb(RED)}, 0.1);
+  background-color: ${RED + "1A"};
   border-radius: 16px;
   color: ${RED};
 `;

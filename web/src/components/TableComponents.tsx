@@ -31,7 +31,7 @@ export const Td = styled.td<{
   padding: 12px;
   text-align: ${(props) => props.textAlign};
 
-  color: ${(props) => colorSwitcher(props.color)};
+  color: ${(props) => colorSwitcher(props.color ?? "dark")};
 
   font-weight: ${(props) =>
     props.isMedium ? "500" : props.isBold ? "700" : "400"};
