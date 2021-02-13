@@ -40,8 +40,14 @@ export const Statistics: React.FC = () => {
         <InfoCard
           name="CHMF"
           message="You have 16% less of them than needed"
-          variant="success"
+          variant="warning"
           mt="32px"
+        />
+        <InfoCard
+          name="FXIM"
+          message="You have 50% more of them than needed"
+          variant="danger"
+          mt="16px"
         />
       </section>
     </>
