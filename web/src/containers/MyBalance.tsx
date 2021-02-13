@@ -7,6 +7,7 @@ import { TablePrices } from "../components/TablePrices";
 import { Chevron } from "../components/Chevron";
 import { FlexBox } from "../components/FlexBox";
 import { mockData } from "../mockData";
+import { AddButton } from "../components/AddButton";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -25,8 +26,12 @@ export const MyBalance: React.FC = () => {
   return (
     <>
       <section>
-        <Title mt="64px">My Balance</Title>
-        <BalanceAmount mt="16px">$465.6</BalanceAmount>
+        <FlexBox mt="64px" ai="center" jc="space-between">
+          <Title>My Balance</Title>
+          <AddButton />
+        </FlexBox>
+
+        <BalanceAmount>$465.6</BalanceAmount>
         <PieChart data={mockData} />
       </section>
 
