@@ -11,6 +11,7 @@ import Select from "react-select";
 import Modal from "react-modal";
 import { CloseButton } from "../components/CloseButton";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
+import { ExplanationText } from "../components/ExplanationText";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -58,6 +59,11 @@ export const MyBalance: React.FC = () => {
           <Title>Add stocks</Title>
           <CloseButton onClick={() => setModalIsOpen(false)} />
         </FlexBox>
+
+        <ExplanationText mt="16px">
+          When you are adding stocks it is increasing the amount of the stocks
+          you have
+        </ExplanationText>
 
         <GrayUppercaseText mt="32px" mb="8px">
           Choose ticket name
