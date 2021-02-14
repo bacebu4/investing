@@ -8,12 +8,9 @@ import { FlexBox } from "../components/FlexBox";
 import { mockData } from "../mockData";
 import { AddButton } from "../components/AddButton";
 import Select from "react-select";
-import Modal from "react-modal";
-import { CloseButton } from "../components/CloseButton";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
-import { ExplanationText } from "../components/ExplanationText";
-import { BaseInput } from "../components/BaseInput";
 import { MultiSelect } from "../components/MultiSelect";
+import { AddStocksModal } from "./AddStocksModal";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -27,23 +24,6 @@ const options = [
   { value: "day", label: "This day" },
 ];
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    width: "30%",
-    height: "60%",
-    border: 0,
-    borderRadius: "20px",
-    paddingLeft: "44px",
-    paddingRight: "44px",
-  },
-};
-
 export const MyBalance: React.FC = () => {
   const selectRef = useRef<Select | null>(null);
 
@@ -51,41 +31,10 @@ export const MyBalance: React.FC = () => {
 
   return (
     <>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <FlexBox ai="center" jc="space-between" mt="16px">
-          <Title>Add stocks</Title>
-          <CloseButton onClick={() => setModalIsOpen(false)} />
-        </FlexBox>
-
-        <ExplanationText mt="16px">
-          When you are adding stocks it is increasing the amount of the stocks
-          you have
-        </ExplanationText>
-
-        <GrayUppercaseText mt="32px" mb="8px">
-          Choose ticket name
-        </GrayUppercaseText>
-
-        <MultiSelect
-          forwardRef={selectRef}
-          options={options}
-          defaultValue={options[0]}
-          onChange={() => console.log(selectRef.current?.state.value)}
-        />
-
-        <GrayUppercaseText mt="32px" mb="8px">
-          Amount
-        </GrayUppercaseText>
-
-        <FlexBox>
-          <BaseInput placeholder="Enter amount of stocks you've bought" />
-        </FlexBox>
-      </Modal>
+      <AddStocksModal
+        modalIsOpen={modalIsOpen}
+        setModalIsOpen={setModalIsOpen}
+      />
 
       <section>
         <FlexBox mt="64px" ai="center" jc="space-between">
