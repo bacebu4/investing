@@ -1,15 +1,12 @@
 import styled from "styled-components";
 import { GRAY, DARK } from "../utils/colors";
 
-type BaseInputProps = {
-  mt: string;
-};
+type BaseInputProps = {};
 
 export const BaseInput = styled.input<BaseInputProps>`
   color: ${DARK};
   background-color: ${DARK}1A;
   width: 80%;
-  margin-top: ${(props) => props.mt};
   font-family: inherit;
   border: 0;
   padding: 12px 16px;
