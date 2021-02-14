@@ -3,7 +3,7 @@ import { GRAY, DARK } from "../utils/colors";
 
 export const BaseInput = styled.input`
   color: ${DARK};
-  background-color: ${DARK}1A;
+  background-color: ${GRAY}1A;
   width: 80%;
   font-family: inherit;
   border: 0;
