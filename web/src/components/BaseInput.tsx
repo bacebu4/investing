@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { GRAY, DARK } from "../utils/colors";
 
-type BaseInputProps = {};
-
-export const BaseInput = styled.input<BaseInputProps>`
+export const BaseInput = styled.input`
   color: ${DARK};
   background-color: ${DARK}1A;
   width: 80%;
