@@ -10,20 +10,13 @@ import { AddButton } from "../components/AddButton";
 import Select from "react-select";
 import Modal from "react-modal";
 import { CloseButton } from "../components/CloseButton";
+import { GrayUppercaseText } from "../components/GrayUppercaseText";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
   font-weight: 600;
   color: ${PURPLE};
   margin-top: ${(props) => props.mt};
-`;
-
-const GrayText = styled.h2`
-  color: ${GRAY};
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 32px;
-  margin-bottom: 8px;
 `;
 
 const options = [
@@ -68,6 +61,10 @@ export const MyBalance: React.FC = () => {
           <CloseButton onClick={() => setModalIsOpen(false)} />
         </FlexBox>
 
+        <GrayUppercaseText mt="32px" mb="8px">
+          Choose ticket name
+        </GrayUppercaseText>
+
         <Select
           ref={selectRef}
           options={options}
@@ -95,7 +92,9 @@ export const MyBalance: React.FC = () => {
       </section>
 
       <section>
-        <GrayText>Ticket's Prices</GrayText>
+        <GrayUppercaseText mt="32px" mb="8px">
+          Ticket's Prices
+        </GrayUppercaseText>
 
         <Select
           ref={selectRef}
