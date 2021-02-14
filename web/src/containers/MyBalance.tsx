@@ -12,12 +12,15 @@ import Modal from "react-modal";
 import { CloseButton } from "../components/CloseButton";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { ExplanationText } from "../components/ExplanationText";
+import { BaseInput } from "../components/BaseInput";
 
 const MultiSelect = styled(Select)`
   & .Select__control {
     background-color: ${GRAY}1A;
     border: 0;
-    border-radius: 10px;
+    border-radius: 16px;
+    font-size: 1rem;
+    padding: 7px 3px;
   }
 `;
 
@@ -84,6 +87,14 @@ export const MyBalance: React.FC = () => {
           defaultValue={options[0]}
           onChange={() => console.log(selectRef.current?.state.value)}
         />
+
+        <GrayUppercaseText mt="32px" mb="8px">
+          Amount
+        </GrayUppercaseText>
+
+        <FlexBox>
+          <BaseInput placeholder="Enter amount of stocks you've bought" />
+        </FlexBox>
       </Modal>
 
       <section>
