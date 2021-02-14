@@ -4,8 +4,9 @@ import { GRAY, DARK } from "../utils/colors";
 export const BaseInput = styled.input`
   color: ${DARK};
   background-color: ${GRAY}1A;
-  width: 80%;
+  width: 100%;
   font-family: inherit;
+  font-size: 1rem;
   border: 0;
   padding: 12px 16px;
   border-radius: 16px;
