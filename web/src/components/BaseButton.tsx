@@ -3,6 +3,7 @@ import { PURPLE } from "../utils/colors";
 
 type BaseButtonProps = {
   ml?: string;
+  mt?: string;
 };
 
 export const BaseButton = styled.button<BaseButtonProps>`
@@ -15,5 +16,6 @@ export const BaseButton = styled.button<BaseButtonProps>`
   font-family: inherit;
   font-weight: 600;
   margin-left: ${(props) => props.ml};
+  margin-top: ${(props) => props.mt};
   cursor: pointer;
 `;

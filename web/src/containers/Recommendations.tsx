@@ -25,6 +25,7 @@ export const Recommendations: React.FC = () => {
 
       <section>
         <Title mt="64px">Your Recommendations are here</Title>
+
         <ExplanationText mt="16px">
           Buy the calculated amount of stocks in order to get close to the
           desired ratio
@@ -36,6 +37,7 @@ export const Recommendations: React.FC = () => {
           variant="success"
           mt="32px"
         />
+
         <InfoCard
           name="FXIM"
           message="You need to buy 55 qt."
@@ -46,9 +48,14 @@ export const Recommendations: React.FC = () => {
 
       <section>
         <Title mt="64px">Automatically add to the portfolio</Title>
+
         <ExplanationText mt="16px">
           Click the button below if you’ve just bought the recommended amount.
         </ExplanationText>
+
+        <BaseButton mt="32px">
+          Add the calculated amount to the portfolio
+        </BaseButton>
       </section>
     </>
   );
