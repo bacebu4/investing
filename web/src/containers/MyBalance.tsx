@@ -42,7 +42,7 @@ export const MyBalance: React.FC = () => {
           <AddButton />
         </FlexBox>
 
-        <BalanceAmount>$465.6</BalanceAmount>
+        <BalanceAmount mt="12px">$465.6</BalanceAmount>
         <PieChart data={mockData} />
       </section>
 
