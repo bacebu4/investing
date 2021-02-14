@@ -54,11 +54,13 @@ export const InfoCard: React.FC<InfoCardProps> = ({
   mt,
 }) => {
   return (
-    <InfoCardWrapper variant={variant} mt={mt}>
-      <FlexBox ai="center">
-        <img src={imageSwitcher(variant)} alt="warning" />
-        <NameWrapper>{name}</NameWrapper> {" – " + message}
-      </FlexBox>
-    </InfoCardWrapper>
+    <div>
+      <InfoCardWrapper variant={variant} mt={mt}>
+        <FlexBox ai="center">
+          <img src={imageSwitcher(variant)} alt="warning" />
+          <NameWrapper>{name}</NameWrapper> {" – " + message}
+        </FlexBox>
+      </InfoCardWrapper>
+    </div>
   );
 };
