@@ -13,16 +13,7 @@ import { CloseButton } from "../components/CloseButton";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { ExplanationText } from "../components/ExplanationText";
 import { BaseInput } from "../components/BaseInput";
-
-const MultiSelect = styled(Select)`
-  & .Select__control {
-    background-color: ${GRAY}1A;
-    border: 0;
-    border-radius: 16px;
-    font-size: 1rem;
-    padding: 7px 3px;
-  }
-`;
+import { MultiSelect } from "../components/MultiSelect";
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -81,8 +72,7 @@ export const MyBalance: React.FC = () => {
         </GrayUppercaseText>
 
         <MultiSelect
-          classNamePrefix={"Select"}
-          ref={selectRef}
+          forwardRef={selectRef}
           options={options}
           defaultValue={options[0]}
           onChange={() => console.log(selectRef.current?.state.value)}
@@ -113,8 +103,7 @@ export const MyBalance: React.FC = () => {
         </GrayUppercaseText>
 
         <MultiSelect
-          ref={selectRef}
-          classNamePrefix={"Select"}
+          forwardRef={selectRef}
           options={options}
           defaultValue={options[0]}
           onChange={() => console.log(selectRef.current?.state.value)}
