@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
-import { PURPLE, DARK } from "../utils/colors";
+import { PURPLE, DARK, LIGHT_GRAY } from "../utils/colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
 import { FlexBox } from "../components/FlexBox";
@@ -100,11 +100,11 @@ export const MyBalance: React.FC = () => {
           defaultValue={options[0]}
           onChange={() => console.log(selectRef.current?.state.value)}
           styles={{
-            option: (provided) => ({
+            option: (provided, state) => ({
               ...provided,
-              backgroundColor: "#ffffff",
+              backgroundColor: state.isFocused ? LIGHT_GRAY : "white",
               color: DARK,
-              padding: 20,
+              padding: 12,
             }),
           }}
         />
