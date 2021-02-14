@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
-import { PURPLE, DARK, LIGHT_GRAY, GRAY } from "../utils/colors";
+import { PURPLE } from "../utils/colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
 import { FlexBox } from "../components/FlexBox";
