@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
-import { GRAY, PURPLE, DARK } from "../utils/colors";
+import { PURPLE, DARK } from "../utils/colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
 import { FlexBox } from "../components/FlexBox";
@@ -45,8 +45,6 @@ export const MyBalance: React.FC = () => {
   const selectRef = useRef<Select | null>(null);
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  console.log(selectRef.current);
 
   return (
     <>
