@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
-import { PURPLE, DARK, LIGHT_GRAY } from "../utils/colors";
+import { PURPLE, DARK, LIGHT_GRAY, GRAY } from "../utils/colors";
 import { PieChart } from "../components/PieChart";
 import { TablePrices } from "../components/TablePrices";
 import { FlexBox } from "../components/FlexBox";
@@ -12,6 +12,14 @@ import Modal from "react-modal";
 import { CloseButton } from "../components/CloseButton";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { ExplanationText } from "../components/ExplanationText";
+
+const MultiSelect = styled(Select)`
+  & .Select__control {
+    background-color: ${GRAY}1A;
+    border: 0;
+    border-radius: 10px;
+  }
+`;
 
 const BalanceAmount = styled.h1<{ mt?: string }>`
   font-size: 2.75rem;
@@ -33,7 +41,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    width: "60%",
+    width: "30%",
     height: "60%",
     border: 0,
     borderRadius: "20px",
@@ -69,19 +77,12 @@ export const MyBalance: React.FC = () => {
           Choose ticket name
         </GrayUppercaseText>
 
-        <Select
+        <MultiSelect
+          classNamePrefix={"Select"}
           ref={selectRef}
           options={options}
           defaultValue={options[0]}
           onChange={() => console.log(selectRef.current?.state.value)}
-          styles={{
-            option: (provided) => ({
-              ...provided,
-              backgroundColor: "#ffffff",
-              color: DARK,
-              padding: 20,
-            }),
-          }}
         />
       </Modal>
 
@@ -100,19 +101,12 @@ export const MyBalance: React.FC = () => {
           Ticket's Prices
         </GrayUppercaseText>
 
-        <Select
+        <MultiSelect
           ref={selectRef}
+          classNamePrefix={"Select"}
           options={options}
           defaultValue={options[0]}
           onChange={() => console.log(selectRef.current?.state.value)}
-          styles={{
-            option: (provided, state) => ({
-              ...provided,
-              backgroundColor: state.isFocused ? LIGHT_GRAY : "white",
-              color: DARK,
-              padding: 12,
-            }),
-          }}
         />
 
         <TablePrices />
