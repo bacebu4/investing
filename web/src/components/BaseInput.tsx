@@ -4,7 +4,7 @@ import { GRAY, DARK } from "../utils/colors";
 export const BaseInput = styled.input`
   color: ${DARK};
   background-color: ${GRAY}1A;
-  width: 100%;
+  flex: 1;
   font-family: inherit;
   font-size: 1rem;
   border: 0;
