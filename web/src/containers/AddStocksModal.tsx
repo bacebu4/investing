@@ -8,6 +8,7 @@ import { MultiSelect } from "../components/MultiSelect";
 import { useRef } from "react";
 import Select from "react-select";
 import { BaseInput } from "../components/BaseInput";
+import { BaseButton } from "../components/BaseButton";
 
 type AddStocksModalProps = {
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -47,7 +48,7 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
       isOpen={modalIsOpen}
       onRequestClose={() => setModalIsOpen(false)}
       style={customStyles}
-      contentLabel="Example Modal"
+      contentLabel="Add Stocks Modal"
     >
       <FlexBox ai="center" jc="space-between" mt="16px">
         <Title>Add stocks</Title>
@@ -59,23 +60,50 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
         have
       </ExplanationText>
 
-      <GrayUppercaseText mt="32px" mb="8px">
-        Choose ticket name
-      </GrayUppercaseText>
+      <section>
+        <GrayUppercaseText mt="32px" mb="8px">
+          Choose ticket name #1
+        </GrayUppercaseText>
 
-      <MultiSelect
-        forwardRef={selectRef}
-        options={options}
-        defaultValue={options[0]}
-        onChange={() => console.log(selectRef.current?.state.value)}
-      />
+        <MultiSelect
+          forwardRef={selectRef}
+          options={options}
+          defaultValue={options[0]}
+          onChange={() => console.log(selectRef.current?.state.value)}
+        />
 
-      <GrayUppercaseText mt="32px" mb="8px">
-        Amount
-      </GrayUppercaseText>
+        <GrayUppercaseText mt="32px" mb="8px">
+          Amount #1
+        </GrayUppercaseText>
 
-      <FlexBox>
-        <BaseInput placeholder="Enter amount of stocks you've bought" />
+        <FlexBox>
+          <BaseInput placeholder="Enter amount of stocks you've bought" />
+        </FlexBox>
+      </section>
+
+      <section>
+        <GrayUppercaseText mt="64px" mb="8px">
+          Choose ticket name #2
+        </GrayUppercaseText>
+
+        <MultiSelect
+          forwardRef={selectRef}
+          options={options}
+          defaultValue={options[0]}
+          onChange={() => console.log(selectRef.current?.state.value)}
+        />
+
+        <GrayUppercaseText mt="32px" mb="8px">
+          Amount #2
+        </GrayUppercaseText>
+
+        <FlexBox>
+          <BaseInput placeholder="Enter amount of stocks you've bought" />
+        </FlexBox>
+      </section>
+
+      <FlexBox mt="32px">
+        <BaseButton color="gray">Add more fields</BaseButton>
       </FlexBox>
     </Modal>
   );
