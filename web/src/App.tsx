@@ -29,7 +29,7 @@ const MainContent = styled.main`
   height: 95vh;
 `;
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <FlexBox>
@@ -59,6 +59,6 @@ function App() {
       </FlexBox>
     </Router>
   );
-}
+};
 
 export default App;
