@@ -9,6 +9,7 @@ const MultiSelectProto = styled(Select)`
     border-radius: 16px;
     font-size: 1rem;
     padding: 7px 3px;
+    cursor: pointer;
   }
 `;
 
