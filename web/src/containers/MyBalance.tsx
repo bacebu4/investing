@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
+import Select from "react-select";
 import { Title } from "../components/Title";
 import { PURPLE } from "../utils/colors";
 import { PieChart } from "../components/PieChart";
@@ -7,7 +8,6 @@ import { TablePrices } from "../components/TablePrices";
 import { FlexBox } from "../components/FlexBox";
 import { mockData } from "../mockData";
 import { AddButton } from "../components/AddButton";
-import Select from "react-select";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { MultiSelect } from "../components/MultiSelect";
 import { AddStocksModal } from "./AddStocksModal";
@@ -48,7 +48,7 @@ export const MyBalance: React.FC = () => {
 
       <section>
         <GrayUppercaseText mt="32px" mb="8px">
-          Ticket's Prices
+          Ticket`&apos;`s Prices
         </GrayUppercaseText>
 
         <MultiSelect

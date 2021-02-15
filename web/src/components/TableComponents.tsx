@@ -22,19 +22,32 @@ export const Tr = styled.tr`
   }
 `;
 
+function fontWeightSwitcher(weight: "medium" | "bold" | undefined) {
+  switch (weight) {
+    case "medium":
+      return "500";
+
+    case "bold":
+      return "600";
+
+    default:
+      return "400";
+  }
+}
+
 export const Td = styled.td<{
   textAlign?: string;
   color?: Color;
   isMedium?: boolean;
   isBold?: boolean;
+  weight?: "medium" | "bold";
 }>`
   padding: 12px;
   text-align: ${(props) => props.textAlign};
 
   color: ${(props) => colorSwitcher(props.color ?? "dark")};
 
-  font-weight: ${(props) =>
-    props.isMedium ? "500" : props.isBold ? "700" : "400"};
+  font-weight: ${(props) => fontWeightSwitcher(props.weight)};
 
   &:first-child {
     border-radius: 10px 0 0 10px;

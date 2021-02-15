@@ -20,8 +20,8 @@ export const PieChart: React.FC<PieChartProps> = ({ data }) => (
       padAngle={2}
       cornerRadius={8}
       colors={[YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE]}
-      radialLabel={function (e) {
-        return e.id.toString().toUpperCase() + " " + e.value + "%";
+      radialLabel={(e) => {
+        return `${e.id.toString().toUpperCase()} ${e.value}%`;
       }}
       radialLabelsLinkStrokeWidth={0}
       radialLabelsTextXOffset={0}

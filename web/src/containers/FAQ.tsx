@@ -3,7 +3,7 @@ import { ExplanationText } from "../components/ExplanationText";
 import { FaqCard } from "../components/FaqCard";
 import { Title } from "../components/Title";
 
-export const FAQ = () => {
+export const FAQ: React.FC = () => {
   return (
     <>
       <Title mt="64px">FAQ</Title>

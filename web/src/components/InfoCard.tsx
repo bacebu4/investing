@@ -17,6 +17,9 @@ function imageSwitcher(variant: VariantProps) {
 
     case "warning":
       return warning;
+
+    default:
+      return warning;
   }
 }
 
@@ -35,7 +38,7 @@ type InfoCardWrapperProps = {
 const InfoCardWrapper = styled.span<InfoCardWrapperProps>`
   display: inline-block;
   padding: 12px 16px;
-  background-color: ${(props) => colorSwitcher(props.variant) + "1a"};
+  background-color: ${(props) => colorSwitcher(props.variant)}1a;
   border-radius: 16px;
   color: ${(props) => colorSwitcher(props.variant)};
   margin-top: ${(props) => props.mt};
@@ -58,7 +61,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
       <InfoCardWrapper variant={variant} mt={mt}>
         <FlexBox ai="center">
           <img src={imageSwitcher(variant)} alt="warning" />
-          <NameWrapper>{name}</NameWrapper> {" – " + message}
+          <NameWrapper>{name}</NameWrapper> {message}
         </FlexBox>
       </InfoCardWrapper>
     </div>

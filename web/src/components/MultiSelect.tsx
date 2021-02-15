@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styled from "styled-components";
 import Select from "react-select";
 import { GRAY } from "../utils/colors";
@@ -19,7 +21,7 @@ export const MultiSelect = (props: any) => {
   return (
     <MultiSelectProto
       ref={forwardRef}
-      classNamePrefix={"Select"}
+      classNamePrefix="Select"
       {...restProps}
     />
   );

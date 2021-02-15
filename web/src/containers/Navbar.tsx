@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { useLocation } from "react-router-dom";
 import { NavbarLink } from "../components/NavbarLink";
 import { FlexBox } from "../components/FlexBox";
-import { useLocation } from "react-router-dom";
 import { SettingsButton } from "../components/SettingsButton";
 
 const NavbarWrapper = styled.ul`

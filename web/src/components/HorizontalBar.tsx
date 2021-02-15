@@ -1,14 +1,14 @@
 import { ResponsiveBar } from "@nivo/bar";
 import styled from "styled-components";
-import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../utils/colors";
 import { getOrdinalColorScale } from "@nivo/colors";
+import { YELLOW, PURPLE, ROSE, BLUE, DARK_BLUE } from "../utils/colors";
 
 const HorizontalBarWrapper = styled.div`
   height: 360px;
 `;
 
 interface HorizontalBarProps {
-  data: object[];
+  data: Record<string, unknown>[];
 }
 
 export const HorizontalBar: React.FC<HorizontalBarProps> = ({ data }) => (
@@ -34,10 +34,10 @@ export const HorizontalBar: React.FC<HorizontalBarProps> = ({ data }) => (
         tickPadding: 12,
         tickRotation: 0,
       }}
-      enableGridX={true}
+      enableGridX
       enableGridY={false}
       enableLabel={false}
-      animate={true}
+      animate
       motionStiffness={90}
       motionDamping={15}
     />

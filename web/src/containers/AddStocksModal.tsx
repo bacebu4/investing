@@ -1,12 +1,12 @@
 import Modal from "react-modal";
+import { useRef } from "react";
+import Select from "react-select";
 import { FlexBox } from "../components/FlexBox";
 import { Title } from "../components/Title";
 import { CloseButton } from "../components/CloseButton";
 import { ExplanationText } from "../components/ExplanationText";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { MultiSelect } from "../components/MultiSelect";
-import { useRef } from "react";
-import Select from "react-select";
 import { BaseInput } from "../components/BaseInput";
 import { BaseButton } from "../components/BaseButton";
 

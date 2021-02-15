@@ -14,7 +14,7 @@ const TableScrollableYWrapper = styled.div`
   }
 `;
 
-export const TableStats = () => {
+export const TableStats: React.FC = () => {
   return (
     <TableScrollableYWrapper>
       <Table mt="44px">
