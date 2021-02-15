@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import { PURPLE } from "../utils/colors";
+import { colorSwitcher, Color } from "../utils/colors";
 
 type BaseButtonProps = {
   ml?: string;
   mt?: string;
+  color?: Color;
 };
 
 export const BaseButton = styled.button<BaseButtonProps>`
-  color: ${PURPLE};
-  background-color: ${PURPLE}1a;
+  color: ${({ color = "purple" }) => colorSwitcher(color)};
+  background-color: ${({ color = "purple" }) => colorSwitcher(color)}1a;
   flex: 1;
   padding: 12px 16px;
   border: 0;
