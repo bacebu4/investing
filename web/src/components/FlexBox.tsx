@@ -24,10 +24,12 @@ interface FlexBoxProps {
   mt?: string;
   ml?: string;
   pr?: string;
+  direction?: "column";
 }
 
 export const FlexBox = styled.div<FlexBoxProps>`
   display: flex;
+  flex-direction: ${(props) => props.direction};
   justify-content: ${(props) => props.jc};
   align-items: ${(props) => props.ai};
   margin-left: ${(props) => props.ml};
