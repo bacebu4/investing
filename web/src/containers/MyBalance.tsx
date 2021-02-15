@@ -48,7 +48,7 @@ export const MyBalance: React.FC = () => {
 
       <section>
         <GrayUppercaseText mt="32px" mb="8px">
-          Ticket`&apos;`s Prices
+          Ticket&apos;s Prices
         </GrayUppercaseText>
 
         <MultiSelect

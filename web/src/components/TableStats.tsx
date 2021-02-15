@@ -36,8 +36,8 @@ export const TableStats: React.FC = () => {
             <Td>12</Td>
             <Td>Lettuce </Td>
             <Td>42.98%</Td>
-            <Td isBold>13%</Td>
-            <Td isBold color={Math.abs(5) >= 10 ? "red" : "gray"}>
+            <Td weight="bold">13%</Td>
+            <Td weight="bold" color={Math.abs(5) >= 10 ? "red" : "gray"}>
               +5%
             </Td>
           </Tr>
@@ -47,8 +47,8 @@ export const TableStats: React.FC = () => {
             <Td>435</Td>
             <Td>Blue</Td>
             <Td>42.40%</Td>
-            <Td isBold>10%</Td>
-            <Td isBold color={Math.abs(4) >= 10 ? "red" : "gray"}>
+            <Td weight="bold">10%</Td>
+            <Td weight="bold" color={Math.abs(4) >= 10 ? "red" : "gray"}>
               +4%
             </Td>
           </Tr>
@@ -58,8 +58,8 @@ export const TableStats: React.FC = () => {
             <Td>324</Td>
             <Td>Smurflow</Td>
             <Td>12.44%</Td>
-            <Td isBold>15%</Td>
-            <Td isBold color={Math.abs(-12) >= 10 ? "red" : "gray"}>
+            <Td weight="bold">15%</Td>
+            <Td weight="bold" color={Math.abs(-12) >= 10 ? "red" : "gray"}>
               -12%
             </Td>
           </Tr>
@@ -69,8 +69,8 @@ export const TableStats: React.FC = () => {
             <Td>4</Td>
             <Td>Red</Td>
             <Td>34.42%</Td>
-            <Td isBold>20%</Td>
-            <Td isBold color={Math.abs(43) >= 10 ? "red" : "gray"}>
+            <Td weight="bold">20%</Td>
+            <Td weight="bold" color={Math.abs(43) >= 10 ? "red" : "gray"}>
               +43%
             </Td>
           </Tr>
@@ -80,8 +80,8 @@ export const TableStats: React.FC = () => {
             <Td>42</Td>
             <Td>Blue</Td>
             <Td>34.33%</Td>
-            <Td isBold>25%</Td>
-            <Td isBold color={Math.abs(5) >= 10 ? "red" : "gray"}>
+            <Td weight="bold">25%</Td>
+            <Td weight="bold" color={Math.abs(5) >= 10 ? "red" : "gray"}>
               -5%
             </Td>
           </Tr>

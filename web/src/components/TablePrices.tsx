@@ -7,37 +7,37 @@ export const TablePrices: React.FC = () => {
       <tbody>
         <Tr>
           <Td>CHMF</Td>
-          <Td textAlign="right" isMedium color="green">
+          <Td textAlign="right" weight="medium" color="green">
             13.43%
           </Td>
         </Tr>
         <Tr>
           <Td>FXUS</Td>
-          <Td textAlign="right" isMedium color="red">
+          <Td textAlign="right" weight="medium" color="red">
             -13.43%
           </Td>
         </Tr>
         <Tr>
           <Td>FXTB</Td>
-          <Td textAlign="right" isMedium color="red">
+          <Td textAlign="right" weight="medium" color="red">
             -13.43%
           </Td>
         </Tr>
         <Tr>
           <Td>FXWO</Td>
-          <Td textAlign="right" isMedium color="green">
+          <Td textAlign="right" weight="medium" color="green">
             13.43%
           </Td>
         </Tr>
         <Tr>
           <Td>FXTB</Td>
-          <Td textAlign="right" isMedium color="red">
+          <Td textAlign="right" weight="medium" color="red">
             -13.43%
           </Td>
         </Tr>
         <Tr>
           <Td>FXWO</Td>
-          <Td textAlign="right" isMedium color="green">
+          <Td textAlign="right" weight="medium" color="green">
             13.43%
           </Td>
         </Tr>

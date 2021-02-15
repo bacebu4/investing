@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import Modal from "react-modal";
+import App from "./App";
 
 Modal.setAppElement("#root");
 // Modal.defaultStyles.overlay.backgroundColor = 'cornsilk';

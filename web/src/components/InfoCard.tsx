@@ -46,7 +46,7 @@ const InfoCardWrapper = styled.span<InfoCardWrapperProps>`
 
 const NameWrapper = styled.span`
   font-weight: 600;
-  margin-left: 12px;
+  margin-left: 8px;
   margin-right: 4px;
 `;
 

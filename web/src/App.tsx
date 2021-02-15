@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
 import { MyBalance } from "./containers/MyBalance";
 import { Statistics } from "./containers/Statistics";
 import { Navbar } from "./containers/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { FlexBox } from "./components/FlexBox";
-import React from "react";
 import { Recommendations } from "./containers/Recommendations";
 import { FAQ } from "./containers/FAQ";
 import { Footer } from "./containers/Footer";
