@@ -53,9 +53,11 @@ export const Recommendations: React.FC = () => {
           Click the button below if you’ve just bought the recommended amount.
         </ExplanationText>
 
-        <BaseButton mt="32px">
-          Add the calculated amount to the portfolio
-        </BaseButton>
+        <FlexBox pr="32px" mt="32px">
+          <BaseButton isSolid>
+            Add the calculated amount to the portfolio
+          </BaseButton>
+        </FlexBox>
       </section>
     </>
   );
