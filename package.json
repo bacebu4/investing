@@ -33,7 +33,7 @@
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
-    "lint:husky": "tsc --noEmit && eslint src/**/*.ts{,x} --max-warnings 0"
+    "lint:husky": "tsc --noEmit && eslint --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
