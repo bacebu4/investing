@@ -42,6 +42,6 @@ export type Color =
   | "warning"
   | "danger";
 
-export function colorSwitcher(color: Color) {
+export function colorSwitcher(color: Color): string {
   return colors[color];
 }
