@@ -14,7 +14,7 @@ export const Statistics: React.FC = () => {
 
         <ExplanationText mt="16px">
           See the statistic about how close you are to the needed percentage of
-          individul stock
+          individual stock
         </ExplanationText>
 
         <TableStats />
