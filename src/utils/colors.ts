@@ -40,7 +40,8 @@ export type Color =
   | "dark"
   | "success"
   | "warning"
-  | "danger";
+  | "danger"
+  | "vivid red";
 
 export function colorSwitcher(color: Color): string {
   return colors[color];
