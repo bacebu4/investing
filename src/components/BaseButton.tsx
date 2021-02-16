@@ -5,11 +5,20 @@ type BaseButtonProps = {
   ml?: string;
   mt?: string;
   color?: Color;
+  isSolid?: boolean;
 };
 
+function fontColorPicker(color: Color, isSolid: boolean | undefined): string {
+  if (isSolid) {
+    return "white";
+  }
+
+  return colorSwitcher(color);
+}
+
 export const BaseButton = styled.button<BaseButtonProps>`
-  color: ${({ color = "purple" }) => colorSwitcher(color)};
-  background-color: ${({ color = "purple" }) => colorSwitcher(color)}1a;
+  color: ${({ color = "purple", isSolid }) => fontColorPicker(color, isSolid)};
+  background-color: ${({ color = "purple" }) => colorSwitcher(color)}${(props) => (props.isSolid ? "" : "1a")};
   flex: 1;
   padding: 12px 16px;
   border: 0;
