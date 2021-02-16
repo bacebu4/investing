@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { BaseButton } from "../components/BaseButton";
+import { BaseLink } from "../components/BaseLink";
 import { ExplanationText } from "../components/ExplanationText";
 import { FlexBox } from "../components/FlexBox";
 import { HorizontalBar } from "../components/HorizontalBar";
@@ -11,6 +13,7 @@ import { NewStockModal } from "./NewStockModal";
 
 export const Statistics: React.FC = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const history = useHistory();
 
   return (
     <>
@@ -68,6 +71,10 @@ export const Statistics: React.FC = () => {
           variant="danger"
           mt="16px"
         />
+
+        <BaseLink mt="32px" onClick={() => history.push("/recommendations")}>
+          See how to solve it here
+        </BaseLink>
       </section>
     </>
   );
