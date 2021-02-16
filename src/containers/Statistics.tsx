@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BaseButton } from "../components/BaseButton";
 import { ExplanationText } from "../components/ExplanationText";
 import { FlexBox } from "../components/FlexBox";
@@ -7,10 +7,17 @@ import { InfoCard } from "../components/InfoCard";
 import { TableStats } from "../components/TableStats";
 import { Title } from "../components/Title";
 import { mockData } from "../mockData";
+import { NewStockModal } from "./NewStockModal";
 
 export const Statistics: React.FC = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   return (
     <>
+      <NewStockModal
+        modalIsOpen={modalIsOpen}
+        setModalIsOpen={setModalIsOpen}
+      />
       <section>
         <Title mt="64px">Portfolio Goals & Statistics</Title>
 
@@ -22,7 +29,11 @@ export const Statistics: React.FC = () => {
         <TableStats />
 
         <FlexBox pr="32px">
-          <BaseButton mt="16px" color="gray">
+          <BaseButton
+            mt="16px"
+            color="gray"
+            onClick={() => setModalIsOpen(true)}
+          >
             Add new stock
           </BaseButton>
         </FlexBox>
