@@ -105,6 +105,13 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
       <FlexBox mt="32px">
         <BaseButton color="gray">Add more fields</BaseButton>
       </FlexBox>
+
+      <FlexBox mt="32px">
+        <BaseButton color="vivid red">Cancel</BaseButton>
+        <BaseButton isSolid ml="16px" color="purple">
+          Save
+        </BaseButton>
+      </FlexBox>
     </Modal>
   );
 };
