@@ -55,7 +55,7 @@ export const MyBalance: React.FC = () => {
           forwardRef={selectRef}
           options={options}
           defaultValue={options[0]}
-          onChange={() => console.log(selectRef.current?.state.value)}
+          // onChange={() => console.log(selectRef.current?.state.value)}
         />
 
         <TablePrices />

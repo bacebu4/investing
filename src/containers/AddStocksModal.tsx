@@ -69,7 +69,7 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
           forwardRef={selectRef}
           options={options}
           defaultValue={options[0]}
-          onChange={() => console.log(selectRef.current?.state.value)}
+          // onChange={() => console.log(selectRef.current?.state.value)}
         />
 
         <GrayUppercaseText mt="32px" mb="8px">
@@ -90,7 +90,7 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
           forwardRef={selectRef}
           options={options}
           defaultValue={options[0]}
-          onChange={() => console.log(selectRef.current?.state.value)}
+          // onChange={() => console.log(selectRef.current?.state.value)}
         />
 
         <GrayUppercaseText mt="32px" mb="8px">
