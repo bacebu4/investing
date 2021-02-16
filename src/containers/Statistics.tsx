@@ -1,5 +1,7 @@
 import React from "react";
+import { BaseButton } from "../components/BaseButton";
 import { ExplanationText } from "../components/ExplanationText";
+import { FlexBox } from "../components/FlexBox";
 import { HorizontalBar } from "../components/HorizontalBar";
 import { InfoCard } from "../components/InfoCard";
 import { TableStats } from "../components/TableStats";
@@ -18,6 +20,12 @@ export const Statistics: React.FC = () => {
         </ExplanationText>
 
         <TableStats />
+
+        <FlexBox pr="32px">
+          <BaseButton mt="16px" color="gray">
+            Add new stock
+          </BaseButton>
+        </FlexBox>
       </section>
 
       <section>
