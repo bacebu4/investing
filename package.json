@@ -32,7 +32,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.ts{,x}",
-    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
+    "lint:husky": "tsc --noEmit && eslint src/**/*.ts{,x} --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
@@ -72,6 +73,6 @@
     "prettier": "^2.2.1"
   },
   "lint-staged": {
-    "src/**/*.ts{,x}": "npm run lint"
+    "src/**/*.ts{,x}": "npm run lint:husky"
   }
 }
