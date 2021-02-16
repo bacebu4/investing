@@ -1,7 +1,13 @@
 import { SvgButtonWrapper } from "./SvgButtonWrapper";
 
 type CloseButtonProps = {
-  onClick?: () => void;
+  onClick?:
+    | ((
+        event:
+          | React.MouseEvent<Element, MouseEvent>
+          | React.KeyboardEvent<Element>
+      ) => void)
+    | undefined;
 };
 
 export const CloseButton: React.FC<CloseButtonProps> = ({ onClick }) => {

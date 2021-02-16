@@ -1,4 +1,8 @@
 import Modal from "react-modal";
+import { FlexBox } from "./FlexBox";
+import { Title } from "./Title";
+import { CloseButton } from "./CloseButton";
+import { ExplanationText } from "./ExplanationText";
 
 const customStyles = {
   content: {
@@ -23,12 +27,14 @@ type BaseModalProps = {
   ) => void;
   isOpen: boolean;
   contentLabel: string;
+  explanationText: string;
 };
 
 export const BaseModal: React.FC<BaseModalProps> = ({
   onRequestClose,
   isOpen,
   contentLabel,
+  explanationText,
   children,
 }) => {
   return (
@@ -38,6 +44,12 @@ export const BaseModal: React.FC<BaseModalProps> = ({
       style={customStyles}
       contentLabel={contentLabel}
     >
+      <FlexBox ai="center" jc="space-between" mt="16px">
+        <Title>{contentLabel}</Title>
+        <CloseButton onClick={onRequestClose} />
+      </FlexBox>
+
+      <ExplanationText mt="16px">{explanationText}</ExplanationText>
       {children}
     </Modal>
   );

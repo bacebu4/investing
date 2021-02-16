@@ -1,9 +1,6 @@
 import { useRef } from "react";
 import Select from "react-select";
 import { FlexBox } from "../components/FlexBox";
-import { Title } from "../components/Title";
-import { CloseButton } from "../components/CloseButton";
-import { ExplanationText } from "../components/ExplanationText";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { MultiSelect } from "../components/MultiSelect";
 import { BaseInput } from "../components/BaseInput";
@@ -30,18 +27,10 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
     <BaseModal
       isOpen={modalIsOpen}
       onRequestClose={() => setModalIsOpen(false)}
-      contentLabel="Add Stocks Modal"
+      contentLabel="Add Stocks"
+      explanationText="When you are adding stocks it is increasing the amount of the stocks you
+      have"
     >
-      <FlexBox ai="center" jc="space-between" mt="16px">
-        <Title>Add stocks</Title>
-        <CloseButton onClick={() => setModalIsOpen(false)} />
-      </FlexBox>
-
-      <ExplanationText mt="16px">
-        When you are adding stocks it is increasing the amount of the stocks you
-        have
-      </ExplanationText>
-
       <section>
         <GrayUppercaseText mt="32px" mb="8px">
           Choose ticket name #1

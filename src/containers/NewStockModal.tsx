@@ -1,7 +1,4 @@
 import { FlexBox } from "../components/FlexBox";
-import { Title } from "../components/Title";
-import { CloseButton } from "../components/CloseButton";
-import { ExplanationText } from "../components/ExplanationText";
 import { BaseInput } from "../components/BaseInput";
 import { BaseButton } from "../components/BaseButton";
 import { BaseModal } from "../components/BaseModal";
@@ -20,16 +17,8 @@ export const NewStockModal: React.FC<NewStockModalProps> = ({
       isOpen={modalIsOpen}
       onRequestClose={() => setModalIsOpen(false)}
       contentLabel="Add Stocks Modal"
+      explanationText="Enter the ticket name below into the search bar"
     >
-      <FlexBox ai="center" jc="space-between" mt="16px">
-        <Title>Add New Stocks</Title>
-        <CloseButton onClick={() => setModalIsOpen(false)} />
-      </FlexBox>
-
-      <ExplanationText mt="16px">
-        Enter the ticket name below into the search bar
-      </ExplanationText>
-
       <section>
         <FlexBox mt="32px">
           <BaseInput placeholder="Ticker name" />
