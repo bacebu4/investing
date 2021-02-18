@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { FlexBox } from "./components/FlexBox";
 import { FAQ } from "./containers/FAQ";
 import { Footer } from "./containers/Footer";
+import { Login } from "./containers/Login";
 import { MyBalance } from "./containers/MyBalance";
 import { Navbar } from "./containers/Navbar";
 import { Recommendations } from "./containers/Recommendations";
@@ -44,7 +45,7 @@ const App: React.FC = () => {
             </Route>
 
             <Route exact path="/login">
-              <Recommendations />
+              <Login />
             </Route>
           </Switch>
         </FlexBox>
