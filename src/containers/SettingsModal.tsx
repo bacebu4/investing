@@ -5,6 +5,7 @@ import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { BaseInput } from "../components/BaseInput";
 import { ExplanationText } from "../components/ExplanationText";
 import { SettingsCard } from "../components/SettingsCard";
+import { ControlButtons } from "../components/ControlButtons";
 
 type SettingsModalProps = {
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -62,12 +63,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         </ExplanationText>
       </section>
 
-      <FlexBox mt="32px">
-        <BaseButton color="vivid red">Cancel</BaseButton>
-        <BaseButton isSolid ml="16px" color="purple">
-          Apply
-        </BaseButton>
-      </FlexBox>
+      <ControlButtons mt="32px" />
 
       <FlexBox mt="32px">
         <BaseButton>Log Out</BaseButton>

@@ -6,6 +6,7 @@ import { MultiSelect } from "../components/MultiSelect";
 import { BaseInput } from "../components/BaseInput";
 import { BaseButton } from "../components/BaseButton";
 import { BaseModal } from "../components/BaseModal";
+import { ControlButtons } from "../components/ControlButtons";
 
 type AddStocksModalProps = {
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -77,12 +78,7 @@ export const AddStocksModal: React.FC<AddStocksModalProps> = ({
         <BaseButton color="gray">Add more fields</BaseButton>
       </FlexBox>
 
-      <FlexBox mt="32px">
-        <BaseButton color="vivid red">Cancel</BaseButton>
-        <BaseButton isSolid ml="16px" color="purple">
-          Save
-        </BaseButton>
-      </FlexBox>
+      <ControlButtons mt="32px" />
     </BaseModal>
   );
 };

@@ -4,6 +4,7 @@ import { BaseButton } from "../components/BaseButton";
 import { BaseModal } from "../components/BaseModal";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { SearchResultCard } from "../components/SearchResultCard";
+import { ControlButtons } from "../components/ControlButtons";
 
 type NewStockModalProps = {
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -39,12 +40,7 @@ export const NewStockModal: React.FC<NewStockModalProps> = ({
         <SearchResultCard name="FXWO" isSelected={false} />
       </section>
 
-      <FlexBox mt="32px">
-        <BaseButton color="vivid red">Cancel</BaseButton>
-        <BaseButton isSolid ml="16px" color="purple">
-          Apply
-        </BaseButton>
-      </FlexBox>
+      <ControlButtons mt="32px" />
     </BaseModal>
   );
 };
