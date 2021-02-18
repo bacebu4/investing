@@ -13,7 +13,7 @@ const customStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     width: "30%",
-    height: "60%",
+    maxHeight: "60%",
     border: 0,
     borderRadius: "20px",
     paddingLeft: "44px",
