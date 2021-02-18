@@ -1,24 +1,17 @@
-import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 import { BaseInput } from "../components/BaseInput";
 import { FlexBox } from "../components/FlexBox";
 import { GrayUppercaseText } from "../components/GrayUppercaseText";
 import { BaseButton } from "../components/BaseButton";
 import { BaseLink } from "../components/BaseLink";
-import logo from "../assets/logo.png";
-
-const MainTitle = styled.h1`
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-left: 16px;
-`;
+import { Logo } from "../components/Logo";
 
 export const Register: React.FC = () => {
+  const history = useHistory();
+
   return (
     <div>
-      <FlexBox jc="center" ai="center" w="300px">
-        <img src={logo} width={144} alt="chart logo" />
-        <MainTitle>Rational Invest</MainTitle>
-      </FlexBox>
+      <Logo />
 
       <GrayUppercaseText mb="8px" mt="44px">
         Email
@@ -39,7 +32,9 @@ export const Register: React.FC = () => {
       </FlexBox>
 
       <FlexBox w="300px" mt="44px">
-        <BaseLink>Already have an account?</BaseLink>
+        <BaseLink onClick={() => history.push("/login")}>
+          Already have an account?
+        </BaseLink>
       </FlexBox>
     </div>
   );
