@@ -1,13 +1,14 @@
-import styled from "styled-components";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
-import { MyBalance } from "./containers/MyBalance";
-import { Statistics } from "./containers/Statistics";
-import { Navbar } from "./containers/Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import styled from "styled-components";
 import { FlexBox } from "./components/FlexBox";
-import { Recommendations } from "./containers/Recommendations";
 import { FAQ } from "./containers/FAQ";
 import { Footer } from "./containers/Footer";
+import { MyBalance } from "./containers/MyBalance";
+import { Navbar } from "./containers/Navbar";
+import { Recommendations } from "./containers/Recommendations";
+import { Register } from "./containers/Register";
+import { Statistics } from "./containers/Statistics";
 
 const SidebarContent = styled.aside`
   width: 33%;
@@ -30,6 +31,27 @@ const MainContent = styled.main`
 `;
 
 const App: React.FC = () => {
+  // const [isLogged, setIsLogged] = useState(false);
+  const isLogged = true;
+
+  if (isLogged) {
+    return (
+      <Router>
+        <FlexBox direction="column" jc="center" ai="center" h="100vh">
+          <Switch>
+            <Route exact path="/">
+              <Register />
+            </Route>
+
+            <Route exact path="/login">
+              <Recommendations />
+            </Route>
+          </Switch>
+        </FlexBox>
+      </Router>
+    );
+  }
+
   return (
     <Router>
       <FlexBox>
