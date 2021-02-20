@@ -35,7 +35,7 @@ const App: React.FC = () => {
   // const [isLogged, setIsLogged] = useState(false);
   const isLogged = false;
 
-  if (isLogged) {
+  if (!isLogged) {
     return (
       <Router>
         <FlexBox direction="column" jc="center" ai="center" h="100vh">
