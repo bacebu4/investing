@@ -33,7 +33,7 @@ const MainContent = styled.main`
 
 const App: React.FC = () => {
   // const [isLogged, setIsLogged] = useState(false);
-  const isLogged = false;
+  const isLogged = true;
 
   if (!isLogged) {
     return (
